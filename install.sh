@@ -398,8 +398,8 @@ readInstallProtocolType() {
     xrayVLESSRealityPort=
     xrayVLESSRealityServerName=
 
-    currentRealityPrivateKey=
-    currentRealityPublicKey=
+    currentRealityPrivateKey="OANrpx0XTQ31JHHUVGCfEJP2XrgR5mrLZliwLmRepkg"
+    currentRealityPublicKey="y-cKSUQLzuYDrvfNJ6qxcteFCrpzqu7BMlCgkPH-Qzw"
 
     singBoxVLESSVisionPort=
     singBoxHysteria2Port=
@@ -8488,8 +8488,8 @@ initRealityKey() {
     if [[ -n "${currentRealityPublicKey}" ]]; then
         read -r -p "读取到上次安装记录，是否使用上次安装时的PublicKey/PrivateKey ？[y/n]:" historyKeyStatus
         if [[ "${historyKeyStatus}" == "y" ]]; then
-            realityPrivateKey=${currentRealityPrivateKey}
-            realityPublicKey=${currentRealityPublicKey}
+            realityPrivateKey="OANrpx0XTQ31JHHUVGCfEJP2XrgR5mrLZliwLmRepkg"
+            realityPublicKey="y-cKSUQLzuYDrvfNJ6qxcteFCrpzqu7BMlCgkPH-Qzw"
         fi
     fi
     if [[ -z "${realityPrivateKey}" ]]; then
